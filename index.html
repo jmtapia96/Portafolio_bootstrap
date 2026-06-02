@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    
+    <!-- BOOTSTRAP 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="#">&lt;José María Muñoz Tapia/&gt;</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="https://github.com/jmtapia96" target="_blank" class="text-body fs-5"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jose-maria-mu%C3%B1oz-tapia/" target="_blank" class="text-body fs-5"><i class="fab fa-linkedin"></i></a>
+                    <a href="assets/docs/Curriculum_JMMT.pdf" download class="btn btn-outline-info btn-sm fw-bold">
+                        <i class="fas fa-download me-2"></i>CV
+                    </a>
+                    <!-- BOTÓN TEMA -->
+                    <button id="btn-tema" class="btn btn-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;" aria-label="Cambiar tema">
+                        <i class="fas fa-sun" id="icono-tema"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header id="hero" class="d-flex align-items-center bg-body" style="min-height: 80vh;">
+        <div class="container py-5">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+                
+                <div class="col-md-6 mt-4 mt-md-0 text-center text-md-start">
+                    <span class="badge bg-info text-dark px-3 py-2 rounded-pill mb-3">Hola, soy</span>
+                    <h1 class="display-3 fw-bold mb-3">José María</h1>
+                    <h2 class="h3 text-secondary mb-4">Desarrollador Web Full Stack</h2>
+                    <p class="lead mb-4">
+                        Especializado en transformar ideas en aplicaciones web robustas y escalables. 
+                        Mi objetivo es crear experiencias de usuario impecables con código limpio.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#proyectos" class="btn btn-info btn-lg text-dark fw-bold shadow-sm btn-hover">Ver mis proyectos</a>
+                        <a href="#contacto" class="btn btn-outline-secondary btn-lg btn-hover">Contactar</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="assets/img/imagen-cv.png" alt="Programador" class="img-fluid rounded-4 shadow-lg" style="max-height: 400px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section id="proyectos" class="py-5 bg-body-tertiary">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Mis Proyectos Destacados</h2>
+                <p class="text-secondary">Trabajos recientes aplicando buenas prácticas de desarrollo.</p>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 portfolio-card rounded-4 overflow-hidden shadow-sm">
+                        <img src="assets/img/pet-swipe.png" class="card-img-top" alt="PetSwipe App">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">PetSwipe</h5>
+                            <p class="card-text text-secondary small">El "Tinder de animales". Aplicación web diseñada para facilitar la adopción de mascotas conectando refugios con futuros dueños mediante un sistema de matches.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark">HTML5</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3 d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-outline-info btn-sm btn-hover" data-bs-toggle="modal" data-bs-target="#modalPetSwipe">
+                                Ver Detalles
+                            </button>
+                            <a href="https://github.com/jmtapia96/PetSwipe" target="_blank" class="text-body text-decoration-none fs-5 btn-hover" aria-label="Ver código de PetSwipe en GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 portfolio-card rounded-4 overflow-hidden shadow-sm">
+                        <img src="assets/img/star-wars.png" class="card-img-top" alt="Web Star Wars">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Universo Star Wars</h5>
+                            <p class="card-text text-secondary small">Proyecto web ambientado en el universo de Stars-Wars. Incluye secciones detalladas sobre las naves del universo, personajes de la saga y elementos interactivos personalizados para crear tus propias misiones y asignarlas a tus pilotos.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark">HTML5</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3 d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-outline-info btn-sm btn-hover" data-bs-toggle="modal" data-bs-target="#modalStarWars">
+                                Ver Detalles
+                            </button>
+                            <a href="https://github.com/jmtapia96/TrabajoStarWars" target="_blank" class="text-body text-decoration-none fs-5 btn-hover" aria-label="Ver código de Star Wars en GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 portfolio-card rounded-4 overflow-hidden shadow-sm">
+                        <img src="assets/img/manos-libres.png" class="card-img-top" alt="Web de Género">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Plataforma de Género</h5>
+                            <p class="card-text text-secondary small">Sitio web estructurado para la divulgación y concienciación acerca de la violencia de genero. Centrado en ofrecer una experiencia de usuario limpia, accesible y totalmente responsiva.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark">HTML5</span>
+                                <span class="badge bg-secondary">CSS</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3 d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-outline-info btn-sm btn-hover" data-bs-toggle="modal" data-bs-target="#modalGenero">
+                                Ver Detalles
+                            </button>
+                            <a href="https://github.com/jmtapia96/web_genero_JMMT" target="_blank" class="text-body text-decoration-none fs-5 btn-hover" aria-label="Ver código de Web de Género en GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalPetSwipe" tabindex="-1" aria-labelledby="modalPetSwipeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-body custom-modal-border">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold" id="modalPetSwipeLabel">PetSwipe - Detalles del Proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselPetSwipe" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-3">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Vista PetSwipe">
+                            </div>
+                            </div>
+                    </div>
+                    <h6>Sobre el desarrollo:</h6>
+                    <p class="text-secondary">Desarrollo de una interfaz amigable e intuitiva para facilitar el proceso de adopción de mascotas, estructurando la navegación para emular las mecánicas de una app móvil en un entorno web.</p>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <a href="https://github.com/jmtapia96/PetSwipe" target="_blank" class="btn btn-info text-dark fw-bold btn-hover"><i class="fab fa-github me-2"></i>Ver Repositorio</a>
+                    <button type="button" class="btn btn-outline-secondary btn-hover" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalStarWars" tabindex="-1" aria-labelledby="modalStarWarsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-body custom-modal-border">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold" id="modalStarWarsLabel">Web Star Wars - Detalles del Proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselStarWars" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-3">
+                            <div class="carousel-item active">
+                                <img src="assets/img/foto_hangar.jpg" class="d-block w-100" alt="Vista Star Wars">
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Sobre el desarrollo:</h6>
+                    <p class="text-secondary">Aplicación de estilos avanzados y maquetación para lograr que sientas que coordinas un hangar dentro del universo de Star-Wars mediante elementos intuitivos.</p>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <a href="https://github.com/jmtapia96/TrabajoStarWars" target="_blank" class="btn btn-info text-dark fw-bold btn-hover"><i class="fab fa-github me-2"></i>Ver Repositorio</a>
+                    <button type="button" class="btn btn-outline-secondary btn-hover" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGenero" tabindex="-1" aria-labelledby="modalGeneroLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-body custom-modal-border">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold" id="modalGeneroLabel">Web de Género - Detalles del Proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselGenero" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-3">
+                            <div class="carousel-item active">
+                                <img src="assets/img/logo vidas libres con slogan.png" class="d-block w-100" alt="Vista Web Género">
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Sobre el desarrollo:</h6>
+                    <p class="text-secondary">Enfoque en la semántica del HTML y el diseño adaptativo (Responsive Design) para garantizar que el contenido divulgativo acerca de un tema tan importante sea accesible desde cualquier tipo de dispositivo.</p>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <a href="https://github.com/jmtapia96/web_genero_JMMT" target="_blank" class="btn btn-info text-dark fw-bold btn-hover"><i class="fab fa-github me-2"></i>Ver Repositorio</a>
+                    <button type="button" class="btn btn-outline-secondary btn-hover" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MODAL PROYECTO 1 ================= -->
+    <div class="modal fade" id="proyectoModal1" tabindex="-1" aria-labelledby="proyectoModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-body custom-modal-border">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold" id="proyectoModal1Label">Dashboard Analítico - Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div id="carouselProyecto1" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselProyecto1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carouselProyecto1" data-bs-slide-to="1"></button>
+                        </div>
+                        <div class="carousel-inner rounded-3">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Vista principal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Vista de gráficos">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <a href="#" class="btn btn-info text-dark fw-bold btn-hover"><i class="fas fa-external-link-alt me-2"></i>Ver Demo</a>
+                    <button type="button" class="btn btn-outline-secondary btn-hover" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section id="habilidades" class="py-5 bg-body">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4">Mis Habilidades</h2>
+                    <p class="text-secondary mb-4">Conocimientos sólidos en el stack frontend, backend y herramientas de control de versiones y bases de datos relacionales. Siempre dispuesto a aprender nuevas tecnologías.</p>
+                    
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill border border-info text-info px-4 py-2 fs-6">HTML5 & CSS</span>
+                        <span class="badge rounded-pill border border-info text-info px-4 py-2 fs-6">JavaScript</span>
+                        <span class="badge rounded-pill border border-info text-info px-4 py-2 fs-6">Bootstrap 5</span>
+                        
+                        <span class="badge rounded-pill border border-primary text-primary px-4 py-2 fs-6">Java & JUnit5</span>
+                        <span class="badge rounded-pill border border-primary text-primary px-4 py-2 fs-6">Python</span>
+                        <span class="badge rounded-pill border border-primary text-primary px-4 py-2 fs-6">Oracle SQL</span>
+                        <span class="badge rounded-pill border border-primary text-primary px-4 py-2 fs-6">MySQL</span>
+                        
+                        <span class="badge rounded-pill border border-light text-light px-4 py-2 fs-6">Git & GitHub</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,git,github,py,java,mysql&theme=dark&perline=4" 
+                        alt="Iconos de mis habilidades tecnológicas: HTML, CSS, JS, Bootstrap, Git, Python, Java y MySQL" 
+                        class="img-fluid p-2">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+<!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="py-5 bg-body-tertiary">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="display-5 fw-bold">¿Hablamos?</h2>
+                    <p class="text-secondary fs-5">Actualmente estoy abierto a nuevas oportunidades laborales. Si tienes un proyecto en mente o simplemente quieres charlar sobre código, ¡mi bandeja de entrada está abierta!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    
+                    <!-- BOTÓN DE CORREO -->
+                    <a href="mailto:jmtapia96@gmail.com?subject=Contacto%20desde%20el%20Portfolio" 
+                        class="btn btn-info btn-lg text-dark fw-bold px-5 py-3 shadow-sm btn-hover mb-4">
+                        <i class="fas fa-envelope me-2 fs-4 align-middle"></i> 
+                        <span class="fs-5 align-middle">Envíame un correo</span>
+                    </a>
+                    
+                    <div class="mb-4">
+                        <span class="text-secondary small">O escríbeme directamente a: <br>
+                        <strong class="text-info">jmtapia96@gmail.com</strong></span>
+                    </div>
+
+                    <!-- Botones de GitHub y LinkedIn -->
+                    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4 pt-4 border-top border-secondary-subtle">
+                        
+                        <a href="https://www.linkedin.com/in/jose-maria-mu%C3%B1oz-tapia/" target="_blank" class="btn btn-outline-info btn-lg btn-hover shadow-sm" aria-label="Visitar mi Github">
+                            <i class="fab fa-github fs-5 me-2 align-middle"></i><span class="align-middle">GitHub</span>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/jose-maria-mu%C3%B1oz-tapia/" target="_blank" class="btn btn-outline-info btn-lg btn-hover shadow-sm" aria-label="Visitar mi LinkedIn">
+                            <i class="fab fa-linkedin fs-5 me-2 align-middle"></i><span class="align-middle">LinkedIn</span>
+                        </a>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-4 text-center bg-body border-top">
+        <div class="container">
+            <small class="text-secondary">&copy; 2026 José María Muñoz Tapia. Portafolio creado con Bootstrap 5.</small>
+        </div>
+    </footer>
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- SCRIPT PERSONALIZADO -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* =========================================
+        ESTILOS GENERALES Y TRANSICIONES
+   ========================================= */
+/* Transición suave para el cambio de modo claro/oscuro */
+body, .navbar, .card, .modal-content {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* =========================================
+        EFECTOS HOVER (Interacciones)
+   ========================================= */
+/* Efecto de elevación para las tarjetas de proyectos */
+.portfolio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(13, 202, 240, 0.15) !important;
+    border-color: #0dcaf0 !important;
+}
+
+/* Efecto de salto e iluminación exclusivo para botones (Correo, GitHub, LinkedIn) */
+.btn-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.btn-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(13, 202, 240, 0.4) !important;
+}
+
+/* =========================================
+            ESTILOS MODO OSCURO
+   ========================================= */
+/* Fondo general de la página */
+[data-bs-theme="dark"] body {
+    background-color: #0f1015 !important;
+}
+
+/* Fondos secundarios (Navbar, Hero, Habilidades) */
+[data-bs-theme="dark"] .bg-body {
+    background-color: #0f1015 !important;
+}
+
+/* Fondos terciarios (Sección Proyectos, Contacto) */
+[data-bs-theme="dark"] .bg-body-tertiary {
+    background-color: #15171e !important;
+}
+
+/* Color de fondo oscuro para tarjetas y modales */
+[data-bs-theme="dark"] .portfolio-card,
+[data-bs-theme="dark"] .custom-modal-border {
+    background-color: #1a1c23 !important;
+    border: 1px solid #2d3748;
+}
